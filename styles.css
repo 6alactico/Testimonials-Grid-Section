@@ -1,0 +1,131 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey100: hsl(214, 17%, 92%);
+    --grey200: hsl(0, 0%, 81%);
+    --grey400: hsl(224, 10%, 45%);
+    --grey500: hsl(217, 19%, 35%);
+    --purple500: hsl(263, 55%, 52%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--white);
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.813rem;
+} 
+
+/* Card content */
+#card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem auto;
+    width: 19.5rem;
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.5rem 5rem rgba(76, 78, 97, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 19.5rem;
+}
+
+/* Card background colors */
+.daniel {
+    background-color: var(--purple500);
+}
+
+.johnathan {
+    background-color: var(--grey500);
+}
+
+.jeanette {
+    background-color: var(--white);
+    color: var(--grey500);
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    color: var(--grey200);
+}
+
+.kira {
+    background-color: var(--white);
+    color: var(--grey500);
+}
+
+/* Card header content */
+.card .header-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0 1rem;
+}
+
+.card .header-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 0.2rem;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.subtext {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.johnathan .subtext {
+    color: hsl(0, 0%, 81%);
+}
+
+.kira .subtext {
+    color: var(--grey400);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 0.855rem;
+}
+
+/* Images */
+img {
+    border-radius: 100%;
+    width: 2rem;
+}
+
+.daniel img {
+    border: 0.1rem solid hsl(264, 82%, 80%);
+}
+
+.patrick img {
+    border: 0.1rem solid var(--purple500);
+}
+
+/* Textual content */
+h2 {
+    font-weight: 500;
+    padding-right: 0.3rem;
+}
+
+.testimonial {
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.daniel .testimonial,  .johnathan .testimonial {
+    color: var(--grey100);
+}
